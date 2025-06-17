@@ -9,31 +9,13 @@ import { useEffect } from 'react'
 
 
 
-// const fetchTranscript = async () => {
-//   const videoId = ''; // Replace with user input
-
-//   try {
-//     const res = await axios.post('http://127.0.0.1:5000', {
-//       video_id: videoId,
-//     });
-//     console.log(res.data.transcript); // Show in UI
-//   } catch (error) {
-//     console.error('Error fetching transcript:', error);
-//   }
-// };
-
-// useEffect(() => {
-//   fetchTranscript();
-// }, []);
-
-
 function App() {
   const [link,setLink] = useState("");
   const [transcript, setTranscript] = useState("");
 
   return (
     <div className="app-container">
-      <Header />
+      <Header/>
       <MainPage link={link} setLink={setLink} transcript={transcript} setTranscript={setTranscript}/>
     </div>
   )

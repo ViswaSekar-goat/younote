@@ -2,7 +2,7 @@
 const Header = () => {
     return (
         <header className="header">
-            <div className="logo">YouNote</div>
+            <div className="logo"></div>
             <div>
                 <ul className="nav">
                     <li className="navElement">Home</li>
